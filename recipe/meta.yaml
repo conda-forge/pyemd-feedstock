@@ -1,6 +1,6 @@
 {% set name = "pyemd" %}
-{% set version = "0.4.3" %}
-{% set sha256sum = "48eb573ded4fd8723a700fb8ce501bea4bbf135a0025a421913df37b932b49ab" %}
+{% set version = "0.4.4" %}
+{% set sha256sum = "2457a0066fed668a6d9a0dd89ea6171110dd5d210f0c92c9662799908f37c08f" %}
 
 package:
   name: {{ name }}
