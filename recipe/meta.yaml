@@ -24,12 +24,12 @@ requirements:
     - toolchain  # [unix]
     - python
     - setuptools
-    - numpy x.x
-    - numpy >=1.9,<2.0.0
+    - numpy 1.9.*   # [not win]
+    - numpy 1.10.*  # [win and py<36]
+    - numpy 1.11.*  # [win and py>=36]
 
   run:
     - python
-    - numpy x.x
     - numpy >=1.9,<2.0.0
 
 test:
