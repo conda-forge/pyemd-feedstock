@@ -1,6 +1,6 @@
 {% set name = "pyemd" %}
-{% set version = "0.5.1" %}
-{% set sha256sum = "fc81c2116f8573e559dfbb8d73e03d9f73c22d0770559f406516984302e07e70" %}
+{% set version = "1.0.0" %}
+{% set sha256sum = "b42b5ae7b2d15b1d4dee63810ea798a39217e8a76b7b49c0eb63a84e0fd900fe" %}
 
 package:
   name: {{ name }}
@@ -12,9 +12,9 @@ source:
   sha256: {{ sha256sum }}
 
 build:
-  number: 1004
-  script: "{{ PYTHON }} -m pip install . -vvv"
-  skip: True  # [win32]
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vvv
+  skip: true  # [win32]
 
 requirements:
   build:
