@@ -1,15 +1,13 @@
 {% set name = "pyemd" %}
 {% set version = "1.0.0" %}
-{% set sha256sum = "b42b5ae7b2d15b1d4dee63810ea798a39217e8a76b7b49c0eb63a84e0fd900fe" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256sum }}
+  sha256: b42b5ae7b2d15b1d4dee63810ea798a39217e8a76b7b49c0eb63a84e0fd900fe
 
 build:
   number: 0
@@ -24,6 +22,7 @@ requirements:
     - python
     - pip
     - numpy
+    - packaging
   run:
     - python
     - {{ pin_compatible('numpy') }}
