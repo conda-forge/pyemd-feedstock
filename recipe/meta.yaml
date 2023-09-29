@@ -20,6 +20,7 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - python
+    - cython
     - pip
     - numpy
     - packaging
